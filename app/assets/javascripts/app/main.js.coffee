@@ -1,0 +1,1 @@
+@coolMillion = angular.module("coolMillion", [])
