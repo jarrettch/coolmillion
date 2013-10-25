@@ -1,6 +1,14 @@
 CoolMillion::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
+   resources :games 
+
   root 'home#index'
+
+  #pass through to front end
+  get '/' => 'home#index'
+  get '/games' => 'home#index'
+  get '/games/*page' => 'home#index'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

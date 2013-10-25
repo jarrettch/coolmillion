@@ -1,1 +1,1 @@
-@coolMillion = angular.module("coolMillion", [])
+coolMillion = angular.module "coolMillion", ['ui.router', 'gamesController', 'applicationController']
